@@ -3,7 +3,7 @@ const Sequelize = require('sequelize');
 
 const db = {};
 
-
+// instantiating sequelize
 db.instance = new Sequelize('testserver', process.env['DB_USER'], process.env['DB_PASSWORD'], {
     host: 'localhost',
     dialect: 'postgres'
